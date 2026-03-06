@@ -98,16 +98,17 @@ function renderCurrentSlide() {
         const item = currentItems[currentIndex];
         const img = item.querySelector('img');
         const caption = item.querySelector('.item-label');
+        const description = item.getAttribute('data-description') || '';
 
         let src = img.getAttribute('src');
         let text = caption ? caption.textContent : 'Preview';
 
-        setLightboxContent(src, text);
+        setLightboxContent(src, text, description);
         updateNavButtons();
     }
 }
 
-function setLightboxContent(imageSrc, captionText) {
+function setLightboxContent(imageSrc, captionText, descriptionText = '') {
     const img = new Image();
     img.src = imageSrc;
 
@@ -121,6 +122,11 @@ function setLightboxContent(imageSrc, captionText) {
 
     lightboxImg.src = imageSrc;
     lightboxCaption.textContent = captionText || 'Preview';
+
+    const descEl = document.getElementById('lightbox-desc');
+    if (descEl) {
+        descEl.textContent = descriptionText;
+    }
 }
 
 function updateNavButtons() {
