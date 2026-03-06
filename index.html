@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culinaire - Premium Project Showcase</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- Google Fonts: Playfair Display for elegant headings & Inter for clean text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <main class="presentation-container">
-        
+
         <!-- Slide 1: Hero Section -->
         <section class="slide hero" id="slide-1">
             <div class="glass-panel reveal">
@@ -22,7 +26,8 @@
                 <h1 class="title">Culinaire</h1>
                 <p class="subtitle">Premium Dining Experience</p>
                 <div class="divider"></div>
-                <p class="description">Sebuah showcase komprehensif dari aplikasi mobile, web dashboard, dan ekosistem deployment.</p>
+                <p class="description">Sebuah showcase komprehensif dari aplikasi mobile, web dashboard, dan ekosistem
+                    deployment.</p>
                 <button class="scroll-btn" onclick="scrollToSlide(1)">Mulai Eksplorasi</button>
             </div>
         </section>
@@ -34,51 +39,69 @@
                 <h2>Aplikasi Mobile</h2>
                 <p>9 Antarmuka Utama (Preview Smartphone)</p>
             </div>
-            
+
             <div class="gallery-grid mobile-grid reveal delay-1">
-                <!-- 9 Mobile Screenshots -->
-                <div class="gallery-item" onclick="openLightbox('assets/images/mobile-1.png', 'Halaman Daftar')">
-                    <img src="assets/images/mobile-1.png" alt="Daftar" onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Daftar'">
-                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
-                    <div class="item-label">Daftar Akun</div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('assets/images/mobile-2.png', 'Halaman Beranda')">
-                    <img src="assets/images/mobile-2.png" alt="Beranda" onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Beranda'">
-                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
-                    <div class="item-label">Beranda</div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('assets/images/mobile-3.png', 'Halaman Menu')">
-                    <img src="assets/images/mobile-3.png" alt="Menu" onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Menu'">
-                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
-                    <div class="item-label">Menu Kami</div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('assets/images/mobile-4.png', 'Halaman Reservasi')">
-                    <img src="assets/images/mobile-4.png" alt="Reservasi" onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Reservasi'">
-                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
-                    <div class="item-label">Reservasi Meja (NEW)</div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('assets/images/mobile-5.png', 'Halaman Reward/Poin')">
-                    <img src="assets/images/mobile-5.png" alt="Poin" onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=My+Points'">
-                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
-                    <div class="item-label">My Points</div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('assets/images/mobile-6.png', 'Halaman Edit Profil')">
-                    <img src="assets/images/mobile-6.png" alt="Edit Profil" onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Edit+Profile'">
-                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
-                    <div class="item-label">Edit Profile</div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('assets/images/mobile-7.png', 'Halaman Login')">
-                    <img src="assets/images/mobile-7.png" alt="Login" onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Login'">
+                <!-- 9 Mobile Screenshots — matched by timestamp -->
+                <div class="gallery-item"
+                    onclick="openLightbox('assets/images/Screenshot_20260306_162235.jpg.jpeg', 'Halaman Login')">
+                    <img src="assets/images/Screenshot_20260306_162235.jpg.jpeg" alt="Login"
+                        onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Login'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Masuk (Login)</div>
                 </div>
-                <div class="gallery-item" onclick="openLightbox('assets/images/mobile-8.png', 'Halaman Profil')">
-                    <img src="assets/images/mobile-8.png" alt="Profil" onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Profile'">
+                <div class="gallery-item"
+                    onclick="openLightbox('assets/images/Screenshot_2026_0306_162255.jpg.jpeg', 'Halaman Daftar')">
+                    <img src="assets/images/Screenshot_2026_0306_162255.jpg.jpeg" alt="Daftar"
+                        onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Daftar'">
+                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
+                    <div class="item-label">Daftar Akun</div>
+                </div>
+                <div class="gallery-item"
+                    onclick="openLightbox('assets/images/Screenshot_2026_0306_162333.jpg.jpeg', 'Halaman Beranda')">
+                    <img src="assets/images/Screenshot_2026_0306_162333.jpg.jpeg" alt="Beranda"
+                        onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Beranda'">
+                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
+                    <div class="item-label">Beranda</div>
+                </div>
+                <div class="gallery-item"
+                    onclick="openLightbox('assets/images/Screenshot_2026_0306_162356.jpg.jpeg', 'Halaman Menu')">
+                    <img src="assets/images/Screenshot_2026_0306_162356.jpg.jpeg" alt="Menu"
+                        onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Menu'">
+                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
+                    <div class="item-label">Menu Kami</div>
+                </div>
+                <div class="gallery-item"
+                    onclick="openLightbox('assets/images/Screenshot_2026_0306_162420.jpg.jpeg', 'Halaman Reservasi')">
+                    <img src="assets/images/Screenshot_2026_0306_162420.jpg.jpeg" alt="Reservasi"
+                        onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Reservasi'">
+                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
+                    <div class="item-label">Reservasi Meja (NEW)</div>
+                </div>
+                <div class="gallery-item"
+                    onclick="openLightbox('assets/images/Screenshot_2026_0306_162445.jpg.jpeg', 'Halaman My Points')">
+                    <img src="assets/images/Screenshot_2026_0306_162445.jpg.jpeg" alt="Poin"
+                        onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=My+Points'">
+                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
+                    <div class="item-label">My Points</div>
+                </div>
+                <div class="gallery-item"
+                    onclick="openLightbox('assets/images/Screenshot_20260306_162519.jpg.jpeg', 'Halaman Edit Profil')">
+                    <img src="assets/images/Screenshot_20260306_162519.jpg.jpeg" alt="Edit Profil"
+                        onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Edit+Profile'">
+                    <div class="overlay"><span class="view-text">Lihat Detail</span></div>
+                    <div class="item-label">Edit Profile</div>
+                </div>
+                <div class="gallery-item"
+                    onclick="openLightbox('assets/images/Screenshot_20260306_162603.jpg.jpeg', 'Halaman Profil')">
+                    <img src="assets/images/Screenshot_20260306_162603.jpg.jpeg" alt="Profil"
+                        onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Profile'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Profile</div>
                 </div>
-                <div class="gallery-item" onclick="openLightbox('assets/images/mobile-9.png', 'Halaman Pengaturan & Bantuan')">
-                    <img src="assets/images/mobile-9.png" alt="Bantuan" onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Contact+Us'">
+                <div class="gallery-item"
+                    onclick="openLightbox('assets/images/Screenshot_20260306_162733.jpg.jpeg', 'Halaman Hubungi Kami')">
+                    <img src="assets/images/Screenshot_20260306_162733.jpg.jpeg" alt="Bantuan"
+                        onerror="this.src='https://via.placeholder.com/400x800/121212/D4AF37?text=Contact+Us'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Hubungi Kami / Pengaturan</div>
                 </div>
@@ -92,31 +115,41 @@
                 <h2>Dashboard & Web Platform</h2>
                 <p>5 Antarmuka Desktop (Preview Web)</p>
             </div>
-            
+
             <div class="gallery-grid web-grid reveal delay-1">
-                <!-- 5 Web Screenshots -->
-                <div class="gallery-item web-item" onclick="openLightbox('assets/images/web-1.png', 'Beranda Web')">
-                    <img src="assets/images/web-1.png" alt="Home" onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Taste+the+Luxury'">
+                <!-- 5 Web Screenshots — matched by timestamp -->
+                <div class="gallery-item web-item"
+                    onclick="openLightbox('assets/images/Screenshot 2026-03-06 161141.png', 'Beranda Web')">
+                    <img src="assets/images/Screenshot 2026-03-06 161141.png" alt="Home"
+                        onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Taste+the+Luxury'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Beranda (Taste the Luxury)</div>
                 </div>
-                <div class="gallery-item web-item" onclick="openLightbox('assets/images/web-2.png', 'Menu Web')">
-                    <img src="assets/images/web-2.png" alt="Menu" onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Menu'">
+                <div class="gallery-item web-item"
+                    onclick="openLightbox('assets/images/Screenshot 2026-03-06 161207.png', 'Menu Web')">
+                    <img src="assets/images/Screenshot 2026-03-06 161207.png" alt="Menu"
+                        onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Menu'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Eksplorasi Menu</div>
                 </div>
-                <div class="gallery-item web-item" onclick="openLightbox('assets/images/web-3.png', 'Reservasi Web')">
-                    <img src="assets/images/web-3.png" alt="Reservasi" onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Reservation'">
+                <div class="gallery-item web-item"
+                    onclick="openLightbox('assets/images/Screenshot 2026-03-06 161223.png', 'Reservasi Web')">
+                    <img src="assets/images/Screenshot 2026-03-06 161223.png" alt="Reservasi"
+                        onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Reservation'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Form Reservasi Eksklusif</div>
                 </div>
-                <div class="gallery-item web-item" onclick="openLightbox('assets/images/web-4.png', 'Keranjang Belanja')">
-                    <img src="assets/images/web-4.png" alt="Cart" onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Shopping+Bag'">
+                <div class="gallery-item web-item"
+                    onclick="openLightbox('assets/images/Screenshot 2026-03-06 161311.png', 'Keranjang Belanja')">
+                    <img src="assets/images/Screenshot 2026-03-06 161311.png" alt="Cart"
+                        onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Shopping+Bag'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Shopping Bag (Cart)</div>
                 </div>
-                <div class="gallery-item web-item" onclick="openLightbox('assets/images/web-5.png', 'Dashboard Profil')">
-                    <img src="assets/images/web-5.png" alt="Profile" onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Dashboard+Profil'">
+                <div class="gallery-item web-item"
+                    onclick="openLightbox('assets/images/Screenshot 2026-03-06 161340.png', 'Dashboard Profil Pelanggan')">
+                    <img src="assets/images/Screenshot 2026-03-06 161340.png" alt="Profile"
+                        onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Dashboard+Profil'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Dashboard Pelanggan</div>
                 </div>
@@ -130,26 +163,32 @@
                 <h2>Bukti Pengerjaan Proyek</h2>
                 <p>3 Bukti Nyata Eksekusi Sistem & Deployment</p>
             </div>
-            
+
             <div class="gallery-grid proof-grid reveal delay-1">
-                <!-- 3 Proof Screenshots -->
-                <div class="gallery-item proof-item" onclick="openLightbox('assets/images/proof-1.png', 'Admin CMS Dashboard')">
-                    <img src="assets/images/proof-1.png" alt="Admin" onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Admin+Dashboard'">
+                <!-- 3 Proof Screenshots — matched by timestamp -->
+                <div class="gallery-item proof-item"
+                    onclick="openLightbox('assets/images/Screenshot 2026-03-06 163347.png', 'Admin CMS Dashboard')">
+                    <img src="assets/images/Screenshot 2026-03-06 163347.png" alt="Admin"
+                        onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Admin+Dashboard'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Admin CMS (Role Management)</div>
                 </div>
-                <div class="gallery-item proof-item" onclick="openLightbox('assets/images/proof-2.png', 'Source Code & Log Komit di GitHub')">
-                    <img src="assets/images/proof-2.png" alt="GitHub" onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=GitHub+Repository'">
+                <div class="gallery-item proof-item"
+                    onclick="openLightbox('assets/images/Screenshot 2026-03-06 164416.png', 'Source Code & Log Komit di GitHub')">
+                    <img src="assets/images/Screenshot 2026-03-06 164416.png" alt="GitHub"
+                        onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=GitHub+Repository'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Source Code Control (GitHub)</div>
                 </div>
-                <div class="gallery-item proof-item" onclick="openLightbox('assets/images/proof-3.png', 'Status Deployment Server')">
-                    <img src="assets/images/proof-3.png" alt="Railway" onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Technical+Deployment'">
+                <div class="gallery-item proof-item"
+                    onclick="openLightbox('assets/images/Screenshot 2026-03-06 164429.png', 'Status Deployment Server')">
+                    <img src="assets/images/Screenshot 2026-03-06 164429.png" alt="Railway"
+                        onerror="this.src='https://via.placeholder.com/1280x720/121212/D4AF37?text=Technical+Deployment'">
                     <div class="overlay"><span class="view-text">Lihat Detail</span></div>
                     <div class="item-label">Production Deployment (Railway)</div>
                 </div>
             </div>
-            
+
             <div class="footer-note reveal delay-2">
                 <p>Dikembangkan dengan ketelitian tinggi dan standar profesional.</p>
             </div>
@@ -172,4 +211,5 @@
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
