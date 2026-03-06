@@ -223,10 +223,11 @@ h3,
 
 .gallery-item img {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
+    /* Ensures the whole screenshot is visible without crop */
     transition: transform 0.8s var(--easing), filter 0.5s ease;
-    filter: brightness(0.85);
-    background: #000;
+    background: transparent;
 }
 
 /* Aspect Ratios */
@@ -265,7 +266,6 @@ h3,
 
 .gallery-item:hover img {
     transform: scale(1.05);
-    filter: brightness(1.1);
 }
 
 .gallery-item:hover .item-label {
