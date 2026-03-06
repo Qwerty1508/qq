@@ -401,6 +401,42 @@ h3,
     transform: rotate(90deg);
 }
 
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(18, 18, 18, 0.6);
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    z-index: 10000;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-nav:hover {
+    background: rgba(212, 175, 55, 0.8);
+    color: #fff;
+}
+
+.lightbox-nav:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.lightbox-prev {
+    left: 2rem;
+}
+
+.lightbox-next {
+    right: 2rem;
+}
+
 /* Scroll Reveal Classes */
 .reveal {
     opacity: 0;
@@ -467,6 +503,20 @@ h3,
     .lightbox-close {
         top: 1rem;
         right: 1.5rem;
+    }
+
+    .lightbox-nav {
+        font-size: 2rem;
+        padding: 0.8rem 1rem;
+        background: rgba(18, 18, 18, 0.4);
+    }
+
+    .lightbox-prev {
+        left: 0.5rem;
+    }
+
+    .lightbox-next {
+        right: 0.5rem;
     }
 
     .lightbox-caption {
