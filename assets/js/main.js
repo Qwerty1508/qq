@@ -4,23 +4,19 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Scroll Reveal Animations (Intersection Observer)
     const fadeElements = document.querySelectorAll('.reveal');
 
     const revealOptions = {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px" // Trigger slightly before it hits the viewport bottom
+        threshold: 0.05,
+        rootMargin: "0px 0px -30px 0px"
     };
 
     const revealOnScroll = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                // Optional: Stop observing after reveal for a one-time animation
-                // observer.unobserve(entry.target);
-            } else {
-                // Remove to allow re-animating when scrolling back up
-                entry.target.classList.remove('active');
+                // One-shot: stop observing once revealed — prevents jitter on re-scroll
+                observer.unobserve(entry.target);
             }
         });
     }, revealOptions);
@@ -33,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // 2. Smooth Scroll to Section
 function scrollToSlide(slideIndex) {
     const slides = document.querySelectorAll('.slide');
-    if(slides[slideIndex]) {
+    if (slides[slideIndex]) {
         // Calculate header offset if needed, or straight scroll
-        slides[slideIndex].scrollIntoView({ 
+        slides[slideIndex].scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
@@ -67,11 +63,11 @@ function openLightbox(imageSrc, captionText) {
     // Basic preloading check
     const img = new Image();
     img.src = imageSrc;
-    
+
     img.onload = () => {
         lightboxImg.src = imageSrc;
     };
-    
+
     // Set fallback if image fails (re-use placeholder logic visually)
     lightboxImg.onerror = () => {
         lightboxImg.src = 'https://via.placeholder.com/1080x1920/121212/D4AF37?text=Image+Not+Found';
@@ -80,7 +76,7 @@ function openLightbox(imageSrc, captionText) {
     // If image is already cached, just assign
     lightboxImg.src = imageSrc;
     lightboxCaption.textContent = captionText || 'Preview';
-    
+
     lightbox.classList.add('active');
     toggleBodyScroll(true);
 }
@@ -88,12 +84,12 @@ function openLightbox(imageSrc, captionText) {
 function closeLightbox() {
     lightbox.classList.remove('active');
     toggleBodyScroll(false);
-    
+
     // Clear image source after animation finishes to prevent ghosting on next open
     setTimeout(() => {
         lightboxImg.src = '';
         lightboxCaption.textContent = '';
-    }, 400); 
+    }, 400);
 }
 
 // Event Listeners for closing Lightbox
